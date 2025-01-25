@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://wtodo8dkhbsp"]
+
+[ext_resource type="PackedScene" uid="uid://cbx60j5em3wab" path="res://Scenes/player.tscn" id="1_rcva6"]
+[ext_resource type="PackedScene" uid="uid://273ncqpkdnrd" path="res://Scenes/bubble.tscn" id="2_phbcn"]
+[ext_resource type="PackedScene" uid="uid://dutl4vuuuu4iw" path="res://Scenes/orbiting_bubble.tscn" id="3_f3r5n"]
+
+[node name="World" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_rcva6")]
+
+[node name="Bubble" parent="." instance=ExtResource("2_phbcn")]
+position = Vector2(186, -180)
+
+[node name="orbiting bubble" parent="." instance=ExtResource("3_f3r5n")]
